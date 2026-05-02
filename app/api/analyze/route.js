@@ -55,7 +55,7 @@ const distanceLabels = {
 
     console.log('Video converted to base64, size:', buffer.length, 'bytes')
 
-    const prompt = `You are a UEFA-licensed professional coach analyzing real match or training footage.
+    const prompt = `You are a UEFA-licensed professional coach analyzing real match or training footage. If you don't see a shot DON'T give a rating: display an error message instead.
 
 CONTEXT PROVIDED BY USER (treat this as fact):
 - Shot type: ${shotTypeLabels[shotTypeInput]}
